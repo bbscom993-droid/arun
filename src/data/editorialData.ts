@@ -1,0 +1,202 @@
+import { EditorialStaff, AdCampaign, MediaSettings } from '../types/editorial';
+
+export const INITIAL_EDITORIAL_STAFF: EditorialStaff[] = [
+  {
+    id: 'staff-1',
+    name: 'Dr. H. Raden Suryo Hadikusumo, S.H., M.Hum.',
+    role: 'Dewan Pembina',
+    desk: 'Hukum',
+    pressCardNumber: 'DP-PB-001/AN/2026',
+    phone: '0812-9876-0001',
+    email: 'dewan.pembina@arunnews.id',
+    city: 'Jakarta Pusat',
+    photoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Januari 2024'
+  },
+  {
+    id: 'staff-2',
+    name: 'Baskoro Danurendra, M.Si.',
+    role: 'Pemimpin Umum',
+    desk: 'Umum',
+    pressCardNumber: 'DP-PU-002/AN/2026',
+    phone: '0811-3456-7890',
+    email: 'pemimpin.umum@arunnews.id',
+    city: 'Jakarta Pusat',
+    photoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Maret 2024'
+  },
+  {
+    id: 'staff-3',
+    name: 'Nurul Hidayati, S.I.Kom., C.J.',
+    role: 'Pemimpin Redaksi',
+    desk: 'Investigasi',
+    pressCardNumber: 'DP-PMR-003/AN/2026',
+    phone: '0812-4567-8901',
+    email: 'pemred@arunnews.id',
+    city: 'Jakarta Selatan',
+    photoUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Februari 2024'
+  },
+  {
+    id: 'staff-4',
+    name: 'Dimas Wicaksono, S.Sos.',
+    role: 'Redaktur Pelaksana',
+    desk: 'Politik',
+    pressCardNumber: 'DP-RED-004/AN/2026',
+    phone: '0813-5678-9012',
+    email: 'redpel@arunnews.id',
+    city: 'Jakarta',
+    photoUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'April 2024'
+  },
+  {
+    id: 'staff-5',
+    name: 'Adv. Hendra Kusnandar, S.H., M.H.',
+    role: 'Ombudsman',
+    desk: 'Hukum',
+    pressCardNumber: 'DP-OMB-005/AN/2026',
+    phone: '0812-6789-0123',
+    email: 'ombudsman@arunnews.id',
+    city: 'Bandung',
+    photoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Mei 2024'
+  },
+  {
+    id: 'staff-6',
+    name: 'Ahmad Faisal Rahman',
+    role: 'Redaktur Desk',
+    desk: 'Kriminal',
+    pressCardNumber: 'DP-KRM-006/AN/2026',
+    phone: '0813-7890-1234',
+    email: 'faisal.kriminal@arunnews.id',
+    city: 'Surabaya',
+    photoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Juni 2024'
+  },
+  {
+    id: 'staff-7',
+    name: 'Siti Rahmawati, S.E.',
+    role: 'Redaktur Desk',
+    desk: 'Ekonomi',
+    pressCardNumber: 'DP-EKO-007/AN/2026',
+    phone: '0812-8901-2345',
+    email: 'siti.ekonomi@arunnews.id',
+    city: 'Jakarta Barat',
+    photoUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Juli 2024'
+  },
+  {
+    id: 'staff-8',
+    name: 'Rian Pratama',
+    role: 'Wartawan / Koresponden',
+    desk: 'Olahraga',
+    pressCardNumber: 'DP-WTR-008/AN/2026',
+    phone: '0813-9012-3456',
+    email: 'rian.sport@arunnews.id',
+    city: 'Jakarta',
+    photoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'Agustus 2024'
+  },
+  {
+    id: 'staff-9',
+    name: 'Bayu Wicaksono & Tim Investigasi',
+    role: 'Wartawan / Koresponden',
+    desk: 'Daerah',
+    pressCardNumber: 'DP-WTR-009/AN/2026',
+    phone: '0812-0123-4567',
+    email: 'bayu.daerah@arunnews.id',
+    city: 'Bandar Lampung',
+    photoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=300&auto=format&fit=crop&q=80',
+    isActive: true,
+    joinedDate: 'September 2024'
+  }
+];
+
+export const INITIAL_AD_CAMPAIGNS: AdCampaign[] = [
+  {
+    id: 'ad-cmp-1',
+    clientName: 'Bank Mandiri Taspen / BUMN Sinergi',
+    slotType: 'Top Header Leaderboard Banner',
+    title: 'Solusi Pembiayaan Usaha Rakyat & Deposito Bunga Unggul',
+    description: 'Promosi produk perbankan digital terpercaya dengan proteksi LPS dan suku bunga kompetitif.',
+    bannerImage: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format&fit=crop&q=80',
+    targetUrl: 'https://wa.me/6281234567890?text=Halo%20Redaksi%20Arun%20News%20Info%20Kemitraan',
+    targetCtaText: 'Buka Rekening Resmi',
+    startDate: '2026-10-01',
+    endDate: '2026-10-31',
+    pricePerMonth: 12500000,
+    status: 'Aktif',
+    impressions: 48520,
+    clicks: 1420
+  },
+  {
+    id: 'ad-cmp-2',
+    clientName: 'PT Telco Nusantara Fiber',
+    slotType: 'In-Article Native Banner',
+    title: 'Internet Cepat 500 Mbps Tanpa Batas Kuota untuk Bisnis Daerah',
+    description: 'Jaringan serat optik menjangkau pelosok kepulauan Nusantara untuk UMKM dan perkantoran.',
+    bannerImage: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&auto=format&fit=crop&q=80',
+    targetUrl: 'https://wa.me/6281234567890?text=Info%20Pasang%20Fiber%20Arun',
+    targetCtaText: 'Pasang Sekarang',
+    startDate: '2026-09-15',
+    endDate: '2026-11-15',
+    pricePerMonth: 8500000,
+    status: 'Aktif',
+    impressions: 29840,
+    clicks: 890
+  },
+  {
+    id: 'ad-cmp-3',
+    clientName: 'Kantor Hukum & Konsultan Pajak Nusantara',
+    slotType: 'Sidebar Sticky Half-Page',
+    title: 'Pendampingan Sengketa Legalitas & Kepatuhan Pajak Korporasi',
+    description: 'Layanan advokat tersumpah menangani perizinan berusaha OSS RBA dan sengketa agraria.',
+    bannerImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?w=600&auto=format&fit=crop&q=80',
+    targetUrl: 'https://wa.me/6281234567890?text=Konsultasi%20Hukum%20Arun%20News',
+    targetCtaText: 'Konsultasi Gratis',
+    startDate: '2026-10-05',
+    endDate: '2026-11-05',
+    pricePerMonth: 6500000,
+    status: 'Aktif',
+    impressions: 18450,
+    clicks: 530
+  },
+  {
+    id: 'ad-cmp-4',
+    clientName: 'Otomotif EV Nusantara Green Car',
+    slotType: 'In-Feed Native Grid Card',
+    title: 'Mobil Listrik Nasional Subsidi Pemerintah Cicilan Rp 2 Jt/Bln',
+    description: 'Garansi baterai 10 tahun, bebas ganjil-genap dan stasiun pengisian daya di 500 titik rest area.',
+    bannerImage: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&auto=format&fit=crop&q=80',
+    targetUrl: 'https://wa.me/6281234567890?text=Test%20Drive%20EV%20Arun',
+    targetCtaText: 'Jadwalkan Test Drive',
+    startDate: '2026-10-01',
+    endDate: '2026-10-25',
+    pricePerMonth: 5000000,
+    status: 'Aktif',
+    impressions: 21300,
+    clicks: 740
+  }
+];
+
+export const INITIAL_MEDIA_SETTINGS: MediaSettings = {
+  mediaName: 'ARUN NEWS',
+  tagline: 'Jembatan Media Nusantara',
+  companyName: 'PT Media Arun Nusantara Pers',
+  skKemenkumham: 'AHU-0038920.AH.01.01.Tahun 2026',
+  dewanPersNo: 'DP-2026-08819/Siber',
+  officeAddress: 'Gedung Pers Nusantara Lt. 5, Jl. Kebon Sirih No. 45, Jakarta Pusat 10110',
+  phoneHotline: '+62 21 3983 2026',
+  whatsappRedaksi: '0812-8899-2026',
+  emailRedaksi: 'redaksi@arunnews.id',
+  bankAccount: 'Bank Mandiri: 123-00-9876543-2 a.n PT Media Arun Nusantara Pers',
+  qrisMerchantName: 'ARUN NEWS NUSANTARA'
+};

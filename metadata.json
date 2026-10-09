@@ -1,0 +1,6 @@
+{
+  "name": "Detik Nusantara - Portal Berita Modern & Terpercaya",
+  "description": "Portal berita Indonesia terkini dan terpercaya menyajikan berita politik, ekonomi, teknologi, olahraga, dan hiburan dengan tampilan modern dan elegan bernuansa biru dan kuning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
